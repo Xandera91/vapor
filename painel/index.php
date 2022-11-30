@@ -13,11 +13,12 @@
     <link rel="stylesheet" href="./assets/global.css">
     <link rel="stylesheet" href="./assets/normalize.css">
     <link rel="stylesheet" href="./assets/style.css">
+    <script src="./assets/scripts.js"></script>
     <title>Vapor - Login</title>
 </head>
 <body>
     <div id="body-container">
-        <form id="log" action="login.php" method="post">
+        <form onclick="excluirMensagemErro()" id="log" action="login.php" method="post">
             <div id="login">
                 <h3>Login - Vapor</h3>
                 <input class="input-log" type="text" name="user" placeholder="E-mail" required>
@@ -27,7 +28,7 @@
                 <button class="button-login" type="submit">LOGIN</button>
 
                 <?php if ($error != null) { ?>
-                <div class="error"><p><?=$error?></p></div>
+                <div id="msg-erro-index" class="error"><p><?=$error?></p></div>
                 <?php } ?>
                 
             </div>
