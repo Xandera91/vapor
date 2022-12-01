@@ -7,7 +7,7 @@
     $idioma = mysqli_fetch_assoc(mysqli_query($conn, $consultar_idioma));
 ?>
 
-<form action="atualizar-idioma.php" method="post">
+<form onclick="removerElementoPorId('erro-msg-editar-idioma')" action="atualizar-idioma.php" method="post">
     <div id="form-create">
         <p>Editar Idioma</p>
         <input value="<?=$idioma['nome']?>" type="text" name="idiom">
@@ -18,7 +18,7 @@
 </form>
 
 <?php if ($error != null) { ?>
-    <div class="error-idioma"><p><?=$error?></p></div>
+    <div id="erro-msg-editar-idioma" class="error-idioma"><p><?=$error?></p></div>
     <?php } ?>
 
 <?php
