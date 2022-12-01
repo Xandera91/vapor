@@ -8,7 +8,7 @@ $administradores = mysqli_query($conn, $query_administradores);
 
 ?>
 
-<form action="cadastrar-adm.php" method="post">
+<form onclick="excluirMsgSuccessError()" action="cadastrar-adm.php" method="post">
     <h3 class="h3jogo">Informe os seguintes dados:</h3>
     <div id="form-create">
         <p>Nome*</p>
@@ -26,11 +26,11 @@ $administradores = mysqli_query($conn, $query_administradores);
     </div>
 
     <?php if ($error != null) {?>
-        <div class="error-adm"><?=$error?></div>
+        <div id="msg-erro-novo-adm" class="error-adm"><?=$error?></div>
     <?php } ?>
 
     <?php if ($success != null) {?>
-        <div class="success"><?=$success?></div>
+        <div id="msg-success-novo-adm" class="success"><?=$success?></div>
     <?php } ?>
 
     <div>

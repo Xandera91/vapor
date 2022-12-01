@@ -42,7 +42,7 @@ $categorias = mysqli_query($conn, $query_categoria);
     </div>
 
     <?php if ($error != null) {?>
-        <div class="error-new-game"><?=$error?></div>
+        <div id="erro-msg-novo-jogo" class="error-new-game"><?=$error?></div>
     <?php } ?>
 
     <div>

@@ -97,4 +97,24 @@ function arquivarMensagem(idMensagem) {
 }
 //end mensagens
 
+//start administrador
+function excluirMsgSuccessError() {
+
+
+    let errorMessage1 = document.getElementById("msg-erro-novo-adm")
+
+    if(errorMessage1 != null) {
+        errorMessage1.remove()
+    }
+
+
+    let errorMessage2 = document.getElementById("msg-success-novo-adm")
+
+    if(errorMessage2 != null) {
+        errorMessage2.remove()
+    }
+    
+}    
+//end administrador
+
 
