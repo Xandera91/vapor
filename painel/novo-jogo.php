@@ -9,7 +9,7 @@ $categorias = mysqli_query($conn, $query_categoria);
 
 <form action="cadastrar-jogo.php" method="post">
     <h3 class="h3jogo">Informe os seguintes dados:</h3>
-    <div id="form-create">
+    <div onclick="excluirMensagemErroNovoJogo()" id="form-create">
         <p>Nome*</p>
         <input type="text" name="name-game" id="name-game" required>
         <br></br>
