@@ -12,7 +12,7 @@ $jogo = mysqli_fetch_assoc(mysqli_query($conn, $query_jogo));
 
 ?>
 
-<form action="atualizar-jogo.php" method="post">
+<form action="atualizar-jogo.php" method="post" onclick="removerElementoPorId('erro-msg-editar-jogo'); removerElementoPorId('success-msg-editar-jogo')">
     <h3 class="h3jogo">Informe os seguintes dados:</h3>
     <div id="form-create">
         <input type="hidden" name="id_jogo" value="<?=$id_jogo?>">
@@ -51,11 +51,11 @@ $jogo = mysqli_fetch_assoc(mysqli_query($conn, $query_jogo));
     </div>
 
     <?php if ($error != null) {?>
-        <div class="error-idioma"><?=$error?></div>
+        <div id="erro-msg-editar-jogo" class="error-idioma"><?=$error?></div>
     <?php } ?>
 
     <?php if ($success != null) {?>
-        <div class="success"><?=$success?></div>
+        <div id="success-msg-editar-jogo" class="success"><?=$success?></div>
     <?php } ?>
 
     <div>
