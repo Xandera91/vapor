@@ -34,7 +34,7 @@
                         <div class="items"><a href="categorias.php" title="categorias">Categorias</a></div>
                         <div class="items"><a href="mensagens.php" title="mensagens">Mensagens</a></div>
                         <div class="items"><a href="novo-adm.php" title="novoadm">Novo Administrador</a></div>
-                        <div class="items"><a href="index.php" title="sair">Sair</a></div>
+                        <div class="items"><a href="logout.php" title="sair">Sair</a></div>
                     </div>
             </div>
             <div id="header-container">
