@@ -8,7 +8,7 @@
     $categoria = mysqli_fetch_assoc(mysqli_query($conn, $consultar_categoria));
 ?>
 
-<form action="atualizar-categoria.php" method="post">
+<form onclick="removerElementoPorId('erro-msg-editar-categoria')" action="atualizar-categoria.php" method="post">
     <div id="form-create">
         <p>Editar Categoria</p>
         <input value="<?=$categoria['nome']?>" type="text" name="category">
@@ -19,7 +19,7 @@
 </form>
 
 <?php if ($error != null) { ?>
-    <div class="error-idioma"><p><?=$error?></p></div>
+    <div id="erro-msg-editar-categoria" class="error-idioma"><p><?=$error?></p></div>
     <?php } ?>
 
 <?php
