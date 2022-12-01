@@ -15,13 +15,20 @@ $query_new_game_with_video = "INSERT INTO jogo (nome, valor, descricao, imagem_u
 
 $query_new_game_without_video = "INSERT INTO jogo (nome, valor, descricao, imagem_url, data_lancamento, desenvolvedora, id_categoria) VALUES ('{$name}', {$price}, '{$description}','{$image}', '{$date_game}', '{$developer}', {$category})";
 
+$query_consultar_jogo = "SELECT nome FROM jogo WHERE nome = '{$name}'";
+
+if($query_consultar_jogo != null) {
+    header('location: novo-jogo.php?error=Jogo já cadastrado!');
+    die();
+}
+
 if ($video == "") {
     mysqli_query($conn, $query_new_game_without_video);
 } else {
     mysqli_query($conn, $query_new_game_with_video);
 }
-
 header('location: jogo.php');
+
 
 
 ?>

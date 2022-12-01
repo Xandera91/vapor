@@ -67,6 +67,14 @@ function excluirPlataforma(idPlataforma, nomePlataforma) {
 //end plataforma
 
 //start categoria
+function excluirMensagemErroNovaCategoria() {
+    let errorMessage = document.getElementById("erro-msg-nova-categoria")
+
+    if(errorMessage != null) {
+        errorMessage.remove()
+    }
+}
+
 function excluirCategoria(idCategoria, nomeCategoria) {
     let excluirCategoria = confirm("Realmente deseja excluir a categoria " + nomeCategoria + "?")
 
@@ -77,5 +85,16 @@ function excluirCategoria(idCategoria, nomeCategoria) {
 }
 
 //end categoria
+
+//start mensagens
+function arquivarMensagem(idMensagem) {
+    let arquivarMensagem = confirm("Realmente deseja arquivar essa mensagem?")
+
+    if (arquivarMensagem == true) {
+        window.open("arquivar-mensagem-site.php?id=" + idMensagem, "_SELF")
+    }
+    
+}
+//end mensagens
 
 

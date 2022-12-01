@@ -25,7 +25,7 @@
                 <td><?=$mensagem_site['email']?></td>
                 <td><?=$mensagem_site['assunto']?></td>
                 <td><a href="visualizar-mensagem.php?id=<?=$mensagem_site['id']?>">Ver</td></a>
-                <td class="utilities"><a href="arquivar-mensagem-site.php?id=<?=$mensagem_site['id']?>">Arquivar</a></td>
+                <td class="utilities"><a onclick="arquivarMensagem(<?=$mensagem_site['id']?>)" href="#">Arquivar</a></td>
             </tr>
             <?php } ?>
         </table>
