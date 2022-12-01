@@ -13,7 +13,7 @@
 </form>
 
 <?php if ($error != null) { ?>
-    <div class="error-idioma"><p><?=$error?></p></div>
+    <div id="erro-msg-categoria" class="error-idioma"><p><?=$error?></p></div>
     <?php } ?>
 
 <?php
