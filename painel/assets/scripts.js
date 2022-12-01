@@ -1,26 +1,34 @@
 //start index
-function excluirMensagemErro() {
-    let errorMessage = document.getElementById("msg-erro-index")
+// function excluirMensagemErro() {
+//     let errorMessage = document.getElementById("msg-erro-index")
 
-    if(errorMessage != null) {
-        window.open("index.php", "_SELF")
-    }
-}
+//     if(errorMessage != null) {
+//         window.open("index.php", "_SELF")
+//     }
+// }
 
 function focusOnFirstInput() {
     const firstInput = document.getElementById("user")
     firstInput.focus()
 }
+
+function removerElementoPorId(idElemento) {
+    let elemento = document.getElementById(idElemento)
+
+    if(elemento != null) {
+        elemento.remove()
+    }
+}
 //end index
 
 //start idioma
-function excluirMensagemErroIdioma() {
-    let errorMessage = document.getElementById("msg-erro-novo-idioma")
+// function excluirMensagemErroIdioma() {
+//     let errorMessage = document.getElementById("msg-erro-novo-idioma")
 
-    if(errorMessage != null) {
-        errorMessage.remove()
-    }
-}
+//     if(errorMessage != null) {
+//         errorMessage.remove()
+//     }
+// }
 
 function excluirIdioma(idIdioma, nomeIdioma) {
     let excluirIdioma = confirm("Realmente deseja excluir o idioma " + nomeIdioma + "?")
@@ -33,13 +41,13 @@ function excluirIdioma(idIdioma, nomeIdioma) {
 //end idioma
 
 ///start jogo
-function excluirMensagemErroNovoJogo() {
-    let errorMessage = document.getElementById("erro-msg-novo-jogo")
+// function excluirMensagemErroNovoJogo() {
+//     let errorMessage = document.getElementById("erro-msg-novo-jogo")
 
-    if(errorMessage != null) {
-        errorMessage.remove()
-    }
-}
+//     if(errorMessage != null) {
+//         errorMessage.remove()
+//     }
+// }
 
 function excluirJogo(idJogo, nomeJogo) {
     let excluirJogo = confirm("Realmente deseja excluir " + nomeJogo + "?")
@@ -52,13 +60,13 @@ function excluirJogo(idJogo, nomeJogo) {
 //end jogo
 
 //start plataforma
-function excluirMensagemErroNovaPlataforma() {
-    let errorMessage = document.getElementById("erro-msg-nova-plataforma")
+// function excluirMensagemErroNovaPlataforma() {
+//     let errorMessage = document.getElementById("erro-msg-nova-plataforma")
 
-    if(errorMessage != null) {
-        errorMessage.remove()
-    }
-}
+//     if(errorMessage != null) {
+//         errorMessage.remove()
+//     }
+// }
 
 function excluirPlataforma(idPlataforma, nomePlataforma) {
     let excluirPlataforma = confirm("Realmente deseja excluir a plataforma " + nomePlataforma + "?")
@@ -72,13 +80,13 @@ function excluirPlataforma(idPlataforma, nomePlataforma) {
 //end plataforma
 
 //start categoria
-function excluirMensagemErroNovaCategoria() {
-    let errorMessage = document.getElementById("erro-msg-nova-categoria")
+// function excluirMensagemErroNovaCategoria() {
+//     let errorMessage = document.getElementById("erro-msg-nova-categoria")
 
-    if(errorMessage != null) {
-        errorMessage.remove()
-    }
-}
+//     if(errorMessage != null) {
+//         errorMessage.remove()
+//     }
+// }
 
 function excluirCategoria(idCategoria, nomeCategoria) {
     let excluirCategoria = confirm("Realmente deseja excluir a categoria " + nomeCategoria + "?")

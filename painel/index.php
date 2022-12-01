@@ -18,7 +18,7 @@
 </head>
 <body onload="focusOnFirstInput()">
     <div id="body-container">
-        <form onclick="excluirMensagemErro()" id="log" action="login.php" method="post">
+        <form onclick="removerElementoPorId('msg-erro-index')" id="log" action="login.php" method="post">
             <div id="login">
                 <h3>Login - Vapor</h3>
                 <input class="input-log" type="text" name="user" id="user" placeholder="E-mail" required>
