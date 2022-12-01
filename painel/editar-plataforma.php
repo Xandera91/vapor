@@ -9,7 +9,7 @@
 ?>
 
 <form action="atualizar-plataforma.php" method="post">
-    <div id="form-create">
+    <div onclick="removerElementoPorId('erro-msg-editar-plataforma')" id="form-create">
         <p>Editar Plataforma</p>
         <input value="<?=$plataforma['nome']?>" type="text" name="platform">
         <input value="<?=$id_plataforma?>" type="hidden" name="id">
@@ -19,7 +19,7 @@
 </form>
 
 <?php if ($error != null) { ?>
-    <div class="error-idioma"><p><?=$error?></p></div>
+    <div id="erro-msg-editar-plataforma" class="error-idioma"><p><?=$error?></p></div>
     <?php } ?>
 
 <?php
