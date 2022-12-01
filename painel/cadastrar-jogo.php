@@ -16,8 +16,9 @@ $query_new_game_with_video = "INSERT INTO jogo (nome, valor, descricao, imagem_u
 $query_new_game_without_video = "INSERT INTO jogo (nome, valor, descricao, imagem_url, data_lancamento, desenvolvedora, id_categoria) VALUES ('{$name}', {$price}, '{$description}','{$image}', '{$date_game}', '{$developer}', {$category})";
 
 $query_consultar_jogo = "SELECT nome FROM jogo WHERE nome = '{$name}'";
+$nome_jogo = mysqli_fetch_assoc(mysqli_query($conn, $query_consultar_jogo));
 
-if($query_consultar_jogo != null) {
+if($nome_jogo != null) {
     header('location: novo-jogo.php?error=Jogo já cadastrado!');
     die();
 }
