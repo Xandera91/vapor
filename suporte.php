@@ -36,7 +36,7 @@
                             </form>
                         </div>
                         <div id="logo-transparente">
-                                <img src="../vapor-php/public/images/logo-vapor-transparente.png" alt="logo_vapor_cinza">
+                                <img src="./public/images/logo-vapor-transparente.png" alt="logo_vapor_cinza">
                         </div>
                     </div>
                 </div>

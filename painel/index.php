@@ -16,12 +16,12 @@
     <script src="./assets/scripts.js"></script>
     <title>Vapor - Login</title>
 </head>
-<body>
+<body onload="focusOnFirstInput()">
     <div id="body-container">
         <form onclick="excluirMensagemErro()" id="log" action="login.php" method="post">
             <div id="login">
                 <h3>Login - Vapor</h3>
-                <input class="input-log" type="text" name="user" placeholder="E-mail" required>
+                <input class="input-log" type="text" name="user" id="user" placeholder="E-mail" required>
                 <br></br>
                 <input class="input-log" type="password" name="password" placeholder="Senha" required>
                 <br></br>

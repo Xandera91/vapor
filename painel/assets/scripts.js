@@ -6,6 +6,11 @@ function excluirMensagemErro() {
         window.open("index.php", "_SELF")
     }
 }
+
+function focusOnFirstInput() {
+    const firstInput = document.getElementById("user")
+    firstInput.focus()
+}
 //end index
 
 //start idioma
