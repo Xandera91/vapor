@@ -25,8 +25,14 @@
                         <a href="../index.php"><img src="./public/images/logo.png" alt="logo-vapor"></a>
                     </div>    
                     <div id="hello">
-                        Olá, <?php $user_loged =explode(" ", $administrador['nome']); echo $user_loged[0]?>!
+                        Olá, <?php $user_loged =explode(" ", $administrador['nome']); echo $user_loged[0]?><br>
+                        <div id="clock">
+                            <script>
+                                updateClock()
+                            </script>
                     </div>
+                    </div>
+                    
                     <div id="menu-content">
                         <div class="items"><a href="jogo.php" title="jogos">Jogos</a></div>
                         <div class="items"><a href="plataformas.php" title="plataforma">Plataformas</a></div>

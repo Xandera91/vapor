@@ -167,8 +167,13 @@ function obterDataHoraAtual() {
     return dataAtual + " " + horaAtual
 }
   
-  let dataHora = obterHoraAtual()
-  
-  console.log(dataHora)
+function updateClock() {
+    const clock = document.getElementById('clock')
+    clock.innerHTML = obterDataHoraAtual() 
+
+    setInterval(function () {
+        clock.innerHTML = obterDataHoraAtual()
+    }, 1000)
+}
   //end dataHora
 

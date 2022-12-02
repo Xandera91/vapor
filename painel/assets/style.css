@@ -138,6 +138,10 @@
         font-weight: bold;
     }
 
+    #master-container #menu-container #clock {
+        margin-top: 10px;
+    }
+
     #master-container #menu-container #menu-content {
         display: flex;
         flex-direction: column;
