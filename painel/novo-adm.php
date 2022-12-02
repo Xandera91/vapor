@@ -8,7 +8,7 @@ $administradores = mysqli_query($conn, $query_administradores);
 
 ?>
 
-<form onclick="excluirMsgSuccessError()" action="cadastrar-adm.php" method="post">
+<form onclick="removerElementoPorId('msg-erro-novo-adm'); removerElementoPorId('msg-success-novo-adm')" action="cadastrar-adm.php" method="post">
     <h3 class="h3jogo">Informe os seguintes dados:</h3>
     <div id="form-create">
         <p>Nome*</p>
