@@ -131,7 +131,7 @@ function excluirMsgSuccessError() {
 //end administrador
 
 //dataHora
-function obterHoraAtual() {
+function obterDataHoraAtual() {
     const data = new Date()
     let hora = data.getHours()
     let minuto = data.getMinutes()
