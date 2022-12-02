@@ -130,4 +130,45 @@ function excluirMsgSuccessError() {
 }    
 //end administrador
 
+//dataHora
+function obterHoraAtual() {
+    const data = new Date()
+    let hora = data.getHours()
+    let minuto = data.getMinutes()
+    let segundo = data.getSeconds()
+  
+    let dia = data.getDate()
+    let mes = data.getMonth()+1
+    let ano = data.getFullYear()
+  
+    if(hora <= 9) {
+      hora = "0" + hora
+    }
+  
+    if(minuto <= 9) {
+      minuto = "0" + minuto
+    }
+  
+    if(segundo <= 9) {
+      segundo = "0" + segundo
+    }
+  
+    if(dia <= 9) {
+      dia = "0" + dia
+    }
+  
+    if(mes <= 9) {
+      mes = "0" + mes
+    }
+  
+    let horaAtual = hora + ":" + minuto + ":" + segundo
+    let dataAtual = dia + "/" + mes + "/" + ano
+  
+    return dataAtual + " " + horaAtual
+}
+  
+  let dataHora = obterHoraAtual()
+  
+  console.log(dataHora)
+  //end dataHora
 
