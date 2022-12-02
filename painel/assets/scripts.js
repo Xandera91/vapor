@@ -167,8 +167,8 @@ function obterDataHoraAtual() {
     return dataAtual + " " + horaAtual
 }
   
-  let dataHora = obterHoraAtual()
+    let dataHora = obterDataHoraAtual()
   
-  console.log(dataHora)
-  //end dataHora
+    console.log(dataHora)
+//end dataHora
 
