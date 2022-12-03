@@ -177,3 +177,39 @@ function updateClock() {
 }
   //end dataHora
 
+  //start change color
+    function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min) + min);
+    }
+
+    function getRandomColor() {
+        const min = 1
+        const max = 4
+
+        let cor = getRandomInt(min, max)
+        const id = document.getElementById('msg-nothing')
+        
+        if(cor == 1) {
+            id.style.color = 'red'
+        }
+
+        if(cor == 2) {
+            id.style.color = 'green'
+        }
+
+        if(cor == 3) {
+            id.style.color = 'blue'
+        }
+
+    }
+
+    function updateColor() {
+        getRandomColor()
+
+        setInterval(function() {
+            getRandomColor()
+        }, 500)
+    }
+  //end change color
