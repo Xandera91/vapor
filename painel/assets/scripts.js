@@ -175,9 +175,9 @@ function updateClock() {
         clock.innerHTML = obterDataHoraAtual()
     }, 1000)
 }
-  //end dataHora
+//end dataHora
 
-  //start change color
+//start change color
     function getRandomInt(min, max) {
         min = Math.ceil(min);
         max = Math.floor(max);
@@ -212,4 +212,32 @@ function updateClock() {
             getRandomColor()
         }, 500)
     }
-  //end change color
+//end change color
+ 
+
+//start new change color
+    function random_bg_color() {
+        const r = Math.floor(Math.random() * 256)
+        const g = Math.floor(Math.random() * 256)
+        const b = Math.floor(Math.random() * 256)
+
+        const bgColor = "rgb(" + r + "," + g + "," + b +")"
+
+        document.getElementById('msg-nothing').style.color = bgColor
+        
+    }
+
+    function changeColor() {
+        setInterval(random_bg_color, 1000)
+    }
+
+//end new change color
+
+// START CODE FOR RECEIVE UPPERCASE
+
+    function caps_lock(elemento) {
+        let user_value = elemento.value
+        elemento.value = elemento.value.toUpperCase()
+    }
+
+// END UPPERCASE
