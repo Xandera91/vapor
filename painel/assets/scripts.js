@@ -235,8 +235,7 @@ function updateClock() {
 
 // START CODE FOR RECEIVE UPPERCASE
 
-    function caps_lock(elemento) {
-        let user_value = elemento.value
+    function capsLock(elemento) {
         elemento.value = elemento.value.toUpperCase()
     }
 

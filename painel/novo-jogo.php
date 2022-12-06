@@ -11,7 +11,7 @@ $categorias = mysqli_query($conn, $query_categoria);
     <h3 class="h3jogo">Informe os seguintes dados:</h3>
     <div onclick="removerElementoPorId('erro-msg-novo-jogo')" id="form-create">
         <p>Nome*</p>
-        <input type="text" name="name-game" id="name-game" required>
+        <input onkeyup="capsLock(this)" type="text" name="name-game" id="name-game" required>
         <br></br>
         <p>Valor*</p>
         <input type="number" name="price-game" id="price-game" min="0" required>

@@ -11,7 +11,7 @@
 <form onclick="removerElementoPorId('erro-msg-editar-categoria')" action="atualizar-categoria.php" method="post">
     <div id="form-create">
         <p>Editar Categoria</p>
-        <input value="<?=$categoria['nome']?>" type="text" name="category">
+        <input onkeyup="capsLock(this)" value="<?=$categoria['nome']?>" type="text" name="category">
         <input value="<?=$id_categoria?>" type="hidden" name="id">
         <br></br>
         <button type="submit">Atualizar</button>
