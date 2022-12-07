@@ -244,8 +244,7 @@ function updateClock() {
 //star ucfirst code
 
 function capitalizeFirstLetter(elemento) {
-    elemento.value = elemento.value.charAt(0). toUpperCase() + elemento.value.slice(1).toLowerCase()
-    
+    elemento.value = elemento.value.charAt(0).toUpperCase() + elemento.value.slice(1).toLowerCase()
   }
 
 //end ucfirst code
