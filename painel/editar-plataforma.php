@@ -11,7 +11,7 @@
 <form action="atualizar-plataforma.php" method="post">
     <div onclick="removerElementoPorId('erro-msg-editar-plataforma')" id="form-create">
         <p>Editar Plataforma</p>
-        <input value="<?=$plataforma['nome']?>" type="text" name="platform">
+        <input onkeyup="capitalizeFirstLetter(this)" value="<?=$plataforma['nome']?>" type="text" name="platform">
         <input value="<?=$id_plataforma?>" type="hidden" name="id">
         <br></br>
         <button type="submit">Atualizar</button>

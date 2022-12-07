@@ -10,7 +10,7 @@
 <form onclick="removerElementoPorId('erro-msg-editar-idioma')" action="atualizar-idioma.php" method="post">
     <div id="form-create">
         <p>Editar Idioma</p>
-        <input value="<?=$idioma['nome']?>" type="text" name="idiom">
+        <input onkeyup="capitalizeFirstLetter(this)" value="<?=$idioma['nome']?>" type="text" name="idiom">
         <input value="<?=$id_idioma?>" type="hidden" name="id">
         <br></br>
         <button type="submit">Atualizar</button>
