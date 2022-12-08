@@ -6,19 +6,19 @@ Esse projeto foi iniciado com o intuito de maximizar o meu conhecimento em **HTM
 
 ## Stack:
 ```
->**HTML;**
->**CSS;**
->**MySQL;**
->**PHP;**
->**JavaScript;**
+HTML;
+CSS;
+MySQL;
+PHP;
+JavaScript;
 ```
 ## Pré Requisitos:
 ```
->**XAMPP;**
->**Servidor web;** Apache
->**Servidor SQL;** MySQL
->**Visual Studio Code;** ou qualquer IDE
->**Browser;** Google Chrome, Opera, Edge, Firefox...
+XAMPP;
+Servidor web; Apache
+Servidor SQL; MySQL
+Visual Studio Code; ou qualquer IDE
+Browser; Google Chrome, Opera, Edge, Firefox...
 ```
 ## Como executar:
 No console do seu VS Code use o "git clone" para puxar meu repositório para a pasta "htdocs" dentro do xampp. Após isso crie um banco de dados no "admin" do seu MySQL com o nome "vapor" e depois restaure o arquivo "vapor.sql" dentro do seu banco vapor para criar o banco de dados. Feito isso nos "modulos/conexao.php" configure os campos de acordo com o seu banco como exemplificado abaixo:
